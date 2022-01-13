@@ -14,4 +14,4 @@ runs:
   steps:
     - name: test
       run: |
-        echo "trump - $GITHUB_ACTION_PATH - end"
+        echo "GITHUB_ACTION_PATH=$GITHUB_ACTION_PATH" >> $GITHUB_ENV
