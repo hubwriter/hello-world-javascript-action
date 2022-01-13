@@ -11,3 +11,7 @@ outputs:
 runs:
   using: 'node16'
   main: 'dist/index.js'
+  steps:
+    - name: test
+      run: |
+        echo "trump - $GITHUB_ACTION_PATH - end"
