@@ -2,13 +2,7 @@
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.222.0/containers/javascript-node
 {
 	"name": "Node.js",
-	"build": {
-		"dockerfile": "Dockerfile",
-		// Update 'VARIANT' to pick a Node version: 16, 14, 12.
-		// Append -bullseye or -buster to pin to an OS version.
-		// Use -bullseye variants on local arm64/Apple Silicon.
-		"args": { "VARIANT": "16-bullseye" }
-	},
+        "image": "mcr.microsoft.com/vscode/devcontainers/typescript-node:0-12",
 
 	// Set *default* container specific settings.json values on container create.
 	"settings": {},
