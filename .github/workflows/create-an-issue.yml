@@ -26,5 +26,5 @@ jobs:
       
       - name: Print to log
         run: |
-          'echo Created issue number ${{ steps.create-issue.outputs.number }}'
-          'echo URL: ${{ steps.create-issue.outputs.url }}'
+          echo Created issue number ${{ steps.create-issue.outputs.number }}
+          echo URL: ${{ steps.create-issue.outputs.url }}
