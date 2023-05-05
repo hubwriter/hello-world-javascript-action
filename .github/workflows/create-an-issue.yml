@@ -6,12 +6,21 @@ name: Create an issue
 
 on: [workflow_dispatch]
 
+permissions:
+  contents: read
+  issues: write 
+
 jobs:
-  create:
+  create-issue:
     runs-on: ubuntu-latest
   
     steps:
       - uses: actions/checkout@v3
       
+      - uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+      
       - name: Print to log
         run: echo This succeeded!
+
