@@ -18,11 +18,13 @@ jobs:
       - uses: actions/checkout@v3
       
       - uses: JasonEtco/create-an-issue@v2
+        id: create-issue
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
         with:
           filename: .github/auto-issue-template.md
       
       - name: Print to log
-        run: echo This succeeded!
-
+        run: |
+          'echo Created issue number ${{ steps.create-issue.outputs.number }}'
+          'echo URL: ${{ steps.create-issue.outputs.url }}'
