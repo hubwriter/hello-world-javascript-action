@@ -12,3 +12,6 @@ jobs:
   
     steps:
       - uses: actions/checkout@v3
+      
+      - name: Print to log
+        run: echo This succeeded!
