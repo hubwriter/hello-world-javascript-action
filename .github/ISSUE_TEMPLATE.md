@@ -3,4 +3,6 @@ title: Someone just pushed
 assignees: hubwriter
 labels: bug, enhancement
 ---
-Someone just pushed, oh no! Here's who did it: {{ payload.sender.login }}.
+This issue was created by the action: {{ tools.context.workflow }}
+
+The workflow was run by: {{ payload.sender.login }}.
