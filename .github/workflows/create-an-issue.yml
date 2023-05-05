@@ -20,7 +20,8 @@ jobs:
       - uses: JasonEtco/create-an-issue@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
-        filename: .github/auto-issue-template.md
+        with:
+          filename: .github/auto-issue-template.md
       
       - name: Print to log
         run: echo This succeeded!
