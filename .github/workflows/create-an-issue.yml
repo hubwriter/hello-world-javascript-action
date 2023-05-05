@@ -1,0 +1,14 @@
+# When this workflow is run
+# it creates a new issue in this repo
+# with some simple content.
+
+name: Create an issue
+
+on: [workflow_dispatch]
+
+jobs:
+  create:
+    runs-on: ubuntu-latest
+  
+    steps:
+      - uses: actions/checkout@v3
