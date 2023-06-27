@@ -1,0 +1,30 @@
+# When this workflow is run
+# it creates a new issue in this repo
+# with some simple content.
+
+name: Create an issue
+
+on: [workflow_dispatch]
+
+permissions:
+  contents: read
+  issues: write 
+
+jobs:
+  create-issue:
+    runs-on: ubuntu-latest
+  
+    steps:
+      - uses: actions/checkout@v3
+      
+      - uses: JasonEtco/create-an-issue@v2
+        id: create-issue
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+        with:
+          filename: .github/auto-issue-template.md
+      
+      - name: Print to log
+        run: |
+          echo Created issue number ${{ steps.create-issue.outputs.number }}
+          echo URL: ${{ steps.create-issue.outputs.url }}
