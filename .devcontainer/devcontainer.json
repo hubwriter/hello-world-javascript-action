@@ -1,10 +1,17 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "features": {
-},
-"portsAttributes": {
-	"5000": {
-		"label": "app-preview"
-	}
-}
+    // Add features here
+  },
+	  
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [5000],
+	  
+  // Define attributes of the automatically forwarded ports
+  "portsAttributes": {
+    "5000": {
+      "label": "app-preview"
+    }
+  }
+	
 }
