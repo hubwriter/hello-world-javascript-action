@@ -1,5 +1,10 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "features": {
-  }
+},
+"portsAttributes": {
+	"5000": {
+		"label": "app-preview"
+	}
+}
 }
