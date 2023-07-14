@@ -15,4 +15,4 @@ jobs:
       - name: "Say Hello Mona it's Monday"
         run: echo "$env:Greeting $env:First_Name. Today is $env:DAY_OF_week!"
         env:
-          First_Name: Mona
+          First_Name: ${{ vars.today }}
