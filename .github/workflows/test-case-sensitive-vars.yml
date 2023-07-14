@@ -14,5 +14,6 @@ jobs:
     steps:
       - name: "Say Hello Mona it's Monday"
         run: echo "$Greeting $First_Name. Today is $day_Of_WEEK!"
+        run: echo "The config variable is: ${{ vars.day_of_WEEK }} - $firstNAME
         env:
           First_Name: Mona
