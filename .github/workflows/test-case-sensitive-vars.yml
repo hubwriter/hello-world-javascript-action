@@ -8,7 +8,7 @@ env:
 
 jobs:
   greeting_job:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     env:
       Greeting: Hello
     steps:
