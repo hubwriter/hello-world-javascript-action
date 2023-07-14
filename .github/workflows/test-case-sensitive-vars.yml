@@ -13,6 +13,6 @@ jobs:
       Greeting: Hello
     steps:
       - name: "Say Hello Mona it's Monday"
-        run: set today=Monster; echo %Greeting% $First_Name. %today%. Today is %day_Of_WEEK%!
+        run: set today=Monster; echo %Greeting% $First_Name. $today. Today is $day_Of_WEEK!
         env:
           First_Name: ${{ vars.day_of_WEEK }}
