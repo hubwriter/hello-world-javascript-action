@@ -8,11 +8,11 @@ env:
 
 jobs:
   greeting_job:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     env:
       Greeting: Hello
     steps:
       - name: "Say Hello Mona it's Monday"
-        run: set today=Monster; echo $Greeting $First_Name. $today. Today is $DAY_OF_WEEK!
+        run: echo "$Greeting $First_Name. Today is $DAY_OF_WEEK!"
         env:
-          First_Name: ${{ vars.day_of_WEEK }}
+          First_Name: Mona
