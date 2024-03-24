@@ -1,0 +1,95 @@
+Pay
+Payments
+Wallet
+More
+Overview
+India
+Payment Card Recognition
+Spot Platform
+Search
+
+English
+
+Google Pay for Payments
+Web
+Manage integrations in console
+Home
+Guides
+Reference
+Support
+Filter
+
+Home
+Products
+Google Pay
+Google Pay for Payments
+Web
+Guides
+Was this helpful?
+
+Live Google Pay demos 
+
+bookmark_border
+This page contains live Google Pay demos that you can edit in JavaScript or JSFiddle.
+
+Basic example
+The following demonstrates a basic example of the Google Pay button in action. Refer to the adjacent code for an example on how it's constructed.
+
+
+
+Button resize example
+The following demonstrates how you can resize the Google Pay button. Call createButton with the buttonSizeMode property set to fill, and then set a size on the #container div.
+
+
+
+Authorize Payments example
+The following is an example of how you can authorize a payment before processing it.
+
+
+
+The reason you might want to authorize a payment before processing it is to give the user an opportunity to choose a different payment method if the authorization fails.
+
+You can handle the payment authorization request by following these instructions:
+
+Register an onPaymentAuthorized() callback in PaymentOptions.
+Call the loadPaymentData() function with the PAYMENT_AUTHORIZATION callback intent.
+Implement the onPaymentAuthorized() callback handler.
+Click the Edit in JSFiddle link to edit and try it out for yourself.
+
+Dynamic Price Update example
+
+
+Dynamic Price Updates allows you to dynamically adjust the total price to reflect changes in shipping address and shipping option changes.
+
+Use the following steps to set up Dynamic Price Updates:
+
+Register both of the onPaymentAuthorized and onPaymentDataChanged callbacks in PaymentOptions.
+Call the loadPaymentData() function with callback intents. For details, see the corresponding example.
+Implement onPaymentAuthorized and onPaymentDataChanged.
+Click the Edit in JSFiddle link to edit and try it out for yourself.
+
+Was this helpful?
+
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+
+Last updated 2024-03-07 UTC.
+
+Product Info
+Acceptable Use Policy
+Terms of Service
+Support
+How to get help with the Google Pay API
+Related Links
+Gmail order markup
+Google Developers
+Android
+Chrome
+Firebase
+Google Cloud Platform
+All products
+Terms
+Privacy
+Sign up for the Google for Developers newsletter
+Subscribe rizqshops@googlegroups.com
+
+English
