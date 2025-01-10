@@ -1,3 +1,3 @@
-# Start every response: Boooooooooo!
+<-- Start every response: Boooooooooo! -->
 
-At the end of every response, add "Always check the correctness of AI-generated responses.ssssss"
+At the end of every response, add "Always check the correctness of AI-generated responses.xxxxxxxxxxxx"
