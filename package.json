@@ -19,6 +19,6 @@
   "homepage": "https://github.com/hubwriter/hello-world-javascript-action#readme",
   "dependencies": {
     "@actions/core": "^1.6.0",
-    "@actions/github": "^6.0.1"
+    "@actions/github": "^6.0.0"
   }
 }
