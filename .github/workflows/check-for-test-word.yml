@@ -1,0 +1,23 @@
+name: Block "TEST" in PRs
+
+on:
+  pull_request:
+
+jobs:
+  check-for-test-word:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout PR code
+        uses: actions/checkout@v4
+
+      - name: Fetch PR diff
+        run: |
+          git fetch origin ${{ github.base_ref }}
+          git diff origin/${{ github.base_ref }}...HEAD > pr.diff
+
+      - name: Fail if "TEST" is found in PR
+        run: |
+          if grep -i 'TEST' pr.diff; then
+            echo 'The word "TEST" was found in the changes. Please remove it before merging.'
+            exit 1
+          fi
